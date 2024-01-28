@@ -341,8 +341,14 @@
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-
-<img data-src="images/politai.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/politai.png"></p>
+</figure>
+</div>
+</center>
+<aside class="notes">
 <p>Hi everybody! Thank you so much for joining today’s session. I am so excited to introduce Quarto and many thanks to Laura and the R-Ladies St.&nbsp;Louis co-organizers for having me today.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -360,9 +366,8 @@
 <h2>Instrucciones</h2>
 <ul>
 <li>Diapositivas: <a href="https://taller-politai-2024-0.github.io/Sesion-0.1/" class="uri">https://taller-politai-2024-0.github.io/Sesion-0.1/</a></li>
-<li>Sesión 1 en GitHub Pages: <a href="https://taller-politai-2024-0.github.io/Sesion-1/" class="uri">https://taller-politai-2024-0.github.io/Sesion-1/</a></li>
+<li>Sesión 1 en GitHub Pages: <a href="https://taller-politai-2024-0.github.io/Sesion-0.1/" class="uri">https://taller-politai-2024-0.github.io/Sesion-0.1/</a></li>
 </ul>
-<div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -375,8 +380,7 @@
 <p>Para seguir el taller, asegúrese de…</p>
 <ul>
 <li>Contar con la última versión de RStudio v2022.07 o posterior:</li>
-<li>O tener una cuenta de rstudio.cloud y poder acceder a los archivos de la sesión 1</li>
-<li>Haber seguido los pasos de la <a href="https://taller-politai-2023-2.github.io/Guia-instalacion-R/#/title-slide">guía de instalación de R y RStudio</a>.</li>
+<li>Contar con una cuenta de rstudio.cloud y acceder a los archivos de la sesión 1</li>
 </ul>
 </div>
 </div>
@@ -394,7 +398,6 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</div>
 </section>
 <section id="sobre-r-y-rstudio" class="slide level2 r-stretch">
 <h2>Sobre <span class="flow">R y RStudio</span></h2>
@@ -414,7 +417,7 @@
 <section id="repasemos-la-instalación-de" class="slide level2">
 <h2>Repasemos la instalación de…</h2>
 <ul>
-<li><a href="https://luccemhu.github.io/"><strong>R y Rstudio</strong></a></li>
+<li><a href="https://taller-politai-2023-2.github.io/Guia-instalacion-R/"><strong>R y Rstudio</strong></a></li>
 </ul>
 
 <img data-src="./images/R_RStudiologo.jpg" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption">Íconos de R y Rstudio, respectivamente</p></section>
@@ -422,9 +425,9 @@
 <h2>Otra opción es RStudio Cloud</h2>
 <p>Esta plataforma se define como un Cloud computing. Es decir, el hardware, software, datos y recursos que utilizas para tus cursos de estadística pasan de estar en nuestras computadoras a “la nube”.</p>
 <ul>
-<li><p><a href="https://login.posit.cloud/register?redirect=https%3A%2F%2Fclient.login.posit.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D0">Pueden crearse una cuenta en el siguiente enlace de Posit Cloud: <strong>Log in or Sign Up</strong></a></p>
+<li><p>Pueden crearse una cuenta en el siguiente enlace de Posit Cloud: <a href="https://login.posit.cloud/register?redirect=https%3A%2F%2Fclient.login.posit.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D0"><strong>Log in or Sign Up</strong></a></p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=whBz89WoxPY">Para profundizar revisen el siguiente enlace: <strong>Rstudio Cloud: Primeros Pasos</strong></a></li>
+<li>Para profundizar revisen el siguiente enlace: <a href="https://www.youtube.com/watch?v=whBz89WoxPY"><strong>Rstudio Cloud: Primeros Pasos</strong></a></li>
 </ul></li>
 </ul>
 </section>
@@ -490,8 +493,9 @@
 <aside><div>
 <p>Revisa las notas de <a href="https://es.r4ds.hadley.nz/01-intro.html">Hadley Wickham</a>!</p>
 </div></aside></section>
-<section id="pero-si-hay-más-softwares-estadísticos-por-qué-usamos-o-deberíamos-usar-r" class="slide level2">
-<h2>Pero si hay más softwares estadísticos, ¿por qué usamos (o deberíamos usar) R?</h2>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<h4 id="pero-si-hay-más-softwares-estadísticos-por-qué-usamos-o-deberíamos-usar-r">Pero si hay más softwares estadísticos, ¿por qué usamos (o deberíamos usar) R?</h4>
 <div>
 <ul>
 <li class="fragment">Costo: Software libre</li>
@@ -521,7 +525,7 @@
 <section id="para-qué-podemos-usar-r" class="slide level2 small">
 <h2>¿Para qué podemos usar R?</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">En general</a></li><li><a href="#tabset-1-2">Aplicaciones</a></li><li><a href="#tabset-1-3">Funcionalidades</a></li><li><a href="#tabset-1-4">Funcionalidades Inesperadas</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">En general</a></li><li><a href="#tabset-1-2">Aplicaciones</a></li><li><a href="#tabset-1-3">Funcionalidades</a></li><li><a href="#tabset-1-4">Y más…</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p>Proporciona una amplia variedad de herramientas para generar visualizaciones y personalización de gráficos de datos de alta calidad, además, junto con Rstudio permiten la automotización de reportes y la replicabilidad de los análisis mediante el uso de scripts.</p>
@@ -595,7 +599,7 @@
 <li>Lean un poco de <a href="https://github.com/mcanouil/awesome-quarto">Awesome Quarto</a>.</li>
 </ul>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 
 <img data-src="images/politai2.png" class="r-stretch quarto-figure-center"></section>
@@ -616,10 +620,10 @@
 <p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/ibmjzFv4K1Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
 
 <div class="footer footer-default">
-<p><a href="https://taller-politai-2024-0.github.io/Sesion-0.1/">Sesión 1</a></p>
+<p><a href="https://taller-politai-2024-0.github.io/Sesion-0.1/">POLITAI</a></p>
 </div>
 <aside><div>
-<p>Source: <a href="https://www.youtube.com/@Datapolitica">Data política</a> en YouTube</p>
+<p>Fuente: <a href="https://www.youtube.com/@Datapolitica">(Data política, 2020)</a>. YouTube</p>
 </div></aside></section>
     </div>
   </div>
