@@ -7,7 +7,7 @@ format:
     transition: fade
     background-transition: fade
     highlight-style: pygments
-    footer: "https://ivelasq.quarto.pub/intro-to-quarto/"
+    footer: "[Sesión 1](https://taller-politai-2024-0.github.io/Sesion-0.1/)"
 ---
 
 ##  {.title}
@@ -37,12 +37,8 @@ Hi everybody! Thank you so much for joining today's session. I am so excited to 
 
 ## Instrucciones {.small}
 
-::: incremental
--   Diapositivas: <https://ivelasq.quarto.pub/intro-to-quarto/>
--   Sesión 1 en GitHub Pages: <https://github.com/ivelasq/2022-10-27_intro-to-quarto>
--   Exercise repo: < >
--   rstudio.cloud Project: < >
-:::
+-   Diapositivas: <https://taller-politai-2024-0.github.io/Sesion-0.1/>
+-   Sesión 1 en GitHub Pages: <https://taller-politai-2024-0.github.io/Sesion-1/>
 
 . . .
 
@@ -235,7 +231,9 @@ Proporciona una amplia variedad de herramientas para generar visualizaciones y p
 -   Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc." En [First Edition](https://r4ds.had.co.nz/) y [Second Edition](https://r4ds.hadley.nz/) 
 -   Fernández, M., I. (2020). Ventajas de R como herramienta para el Análisis y Visualización de datos en Ciencias Sociales. Revista Científica de la UCSA, 7(2), 97-111. Epub 00 de agosto de 2020. <https://doi.org/10.18004/ucsa/2409-8752/2020.007.02.097>
 
+::: aside
 *El contenido de este curso se ofrece bajo una licencia [Dominio público](https://en.wikipedia.org/wiki/Public_domain). El contenido de este curso puede considerarse bajo esta licencia a menos que se notifique de manera diferente.* 
+:::
 
 ## ¿QUÉ ES EL P-VALUE?🎲 {.r-stretch}
 
