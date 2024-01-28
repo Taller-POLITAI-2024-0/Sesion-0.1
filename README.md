@@ -1,10 +1,7 @@
-# [Guía de instalación R y RStudio](https://taller-politai-2023-2.github.io/Guia-instalacion-R/)
+# [Introducción a R y RStudio](https://taller-politai-2024-0.github.io/Sesion-0.1/)
 
-Instalemos R y Rstudio desde Posit para el Taller de Investigación: Política Cuantitativa “CUANTIPOL” - UNMSM
+Editado por [@luccemhu](https://github.com/luccemhu)
+ 
+Gracias a [POLITAI](https://revistas.pucp.edu.pe/index.php/politai) - [Asociación Civil](https://www.instagram.com/politai_asoc_civil/)
 
--> https://taller-politai-2023-2.github.io/Guia-instalacion-R/
-
-En el documento, deberá pasar el mouse y notará los hipervínculos de la guía: 
-
-  - Cliclear y luego...
-  - Se abrirá automáticamente y le dirigirá a la página web o recurso vinculado.
+Revisar en GitHub Pages por aquí: <https://taller-politai-2024-0.github.io/Sesion-0.1/>
