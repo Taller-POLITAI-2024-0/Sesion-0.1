@@ -1,0 +1,246 @@
+---
+format:
+  revealjs: 
+    theme: [default, custom.css, styles.scss, night]
+    filters:
+      - lightbox
+    transition: fade
+    background-transition: fade
+    highlight-style: pygments
+    footer: "https://ivelasq.quarto.pub/intro-to-quarto/"
+---
+
+##  {.title}
+
+::: r-fit-text
+Introducción a [R y RStudio]{.flow}
+:::
+
+::: {style="font-size: 80px"}
+Joel Belsasar & Carlos Crespín
+:::
+
+{{< fa brands github size=1.4xl >}} [luccemhu](https://github.com/luccemhu) | {{< fa brands github size=1.4xl >}} [krlos20203563](https://github.com/krlos20203563) 
+
+<i class="fas fa-envelope"></i> a20196510@pucp.edu.pe | <i class="fas fa-envelope"></i> cdcrespin@pucp.edu.pe
+
+[POLITAI](https://revistas.pucp.edu.pe/index.php/politai)
+
+[Asociación Civil](https://www.instagram.com/politai_asoc_civil/)
+
+## 
+![](images/politai.png){fig-align="center"}
+
+::: notes
+Hi everybody! Thank you so much for joining today's session. I am so excited to introduce Quarto and many thanks to Laura and the R-Ladies St. Louis co-organizers for having me today.
+:::
+
+## Instrucciones {.small}
+
+::: incremental
+-   Diapositivas: <https://ivelasq.quarto.pub/intro-to-quarto/>
+-   Sesión 1 en GitHub Pages: <https://github.com/ivelasq/2022-10-27_intro-to-quarto>
+-   Exercise repo: < >
+-   rstudio.cloud Project: < >
+:::
+
+. . .
+
+::: callout-tip
+## Preparativos para el taller
+
+Para seguir el taller, asegúrese de...
+
+- Contar con la última versión de RStudio v2022.07 o posterior: 
+- O tener una cuenta de rstudio.cloud y poder acceder a los archivos de la sesión 1
+- Haber seguido los pasos de la [guía de instalación de R y RStudio](https://taller-politai-2023-2.github.io/Guia-instalacion-R/#/title-slide).
+:::
+
+::: notes
+You have a few options of how to attend this session. On the README file of the GitHub repo for this session is a list of instructions and a link to the exercise repo. One option is that you have a local copy of the exercises already, and when we get to the different sections you can follow along with what I am doing on your own RStudio. Another option is that you sign up for RStudio Cloud and go into the project to follow along. It is also linked in the instructions. One benefit of this is that you don't have to have RStudio installed on your computer and the project is ready, the packages are installed for you, and you can save a copy of your work if you would like. But, please feel free to just watch the session and try things out on your own afterwards. The slides, repositories, and project will stay up so that you can try things out on your own time. One other thing to note is that Quarto has a lot of options for creating content, so I added some reference materials in the exercise repo README so that you can play around with other options other than the ones I show you.
+:::
+
+## Sobre [R y RStudio]{.flow} {.r-stretch}
+
+### ¿Qué buscamos con el taller?
+
+- Familiarizarnos con el lenguaje, el uso de R y explorar los formas más comunes y útiles para el análisis de datos.
+
+- No es un curso exhaustivo que cubra todas las aplicaciones y posibilidades que se pueden aprovechar con R.
+
+  - Ejemplos de informes...
+
+    - En Github: [Influencia de variables económicas-sociales en la cantidad de protestas a nivel mundial](https://krlos20203563.github.io/Proyecto-Grupal-Estadistica-para-el-Analisis-Politico-2/)
+
+    - En Rpubs: [¿Los países productores de petróleo son los Estados más contaminantes?](https://rpubs.com/LuchoValverde/920711)
+
+## Repasemos la instalación de...
+
+  - [**R y Rstudio**](https://luccemhu.github.io/)
+  
+```{r,echo=FALSE,fig.show="hold", out.width="50%",fig.cap="Íconos de R y Rstudio, respectivamente"}
+knitr::include_graphics("./images/R_RStudiologo.jpg")
+```
+
+## Otra opción es RStudio Cloud
+
+Esta plataforma se define como un Cloud computing. Es decir, el hardware, software, datos y recursos que utilizas para tus cursos de estadística pasan de estar en nuestras computadoras a “la nube”.
+
+  - [Pueden crearse una cuenta en el siguiente enlace de Posit Cloud: **Log in or Sign Up**](https://login.posit.cloud/register?redirect=https%3A%2F%2Fclient.login.posit.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D0)
+   
+    - [Para profundizar revisen el siguiente enlace: **Rstudio Cloud: Primeros Pasos**](https://www.youtube.com/watch?v=whBz89WoxPY)
+
+
+## ¿Qué es R®? {auto-animate="true"}
+
+<center>
+
+**R® es un...**
+
+::: {.fragment .grow .semi-fade-out}
+lenguaje y entorno
+:::
+
+::: {.fragment .grow .semi-fade-out}
+cientifico y técnico
+:::
+
+::: {.fragment .grow .semi-fade-out}
+de código abierto
+:::
+
+::: {.fragment .grow .semi-fade-out}
+para computación estadística, gráficos, entre otros.
+:::
+
+</center>
+
+::: aside
+Revisa el [R project homepage](https://www.r-project.org/)!
+:::
+
+::: notes
+Quarto is an open-source scientific and technical publishing system built on Pandoc. Let's break this down: Open-source: RStudio believes that it's better for everyone if the tools used for research and science are free and open. Free software means more reproducibility, widespread sharing of knowledge and techniques, and elimination of cost barriers. You can also see the source code and contribute, too. Scientific and technical: Scientific and technical means that Quarto has specific things for journal articles or scientific papers, like support for code execution, citations, footnotes, scientific markdown, equations, citations, crossrefs, so many things. We'll be showing some of these later on, but Quarto definitely has the scientific publishing audience in mind. Publishing system: Quarto is a tool for writing dynamic documents that combine code, output, and text. It can embed output from Python, R, Julia, and Observable. Quarto can be rendered to create high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more formats. Pandoc is the tool working behind the scenes to change Quarto documents to their finalized format.Quarto documents are authored with markdown, which is a plain text format. But Pandoc markdown is very rich and lets you control your document in very specific ways while being easy to read and write. We'll cover this as well.
+:::
+
+## … ¿Y RStudio?
+
+::: incremental
+-   Rstudio es un integrated development environment - IDE: un interfaz amigable y poderoso para trabajar con R. 
+-   Puedes descargarlo e instalarlo desde <https://posit.co/download/rstudio-desktop/>.
+:::
+
+. . .
+
+RStudio se actualiza periódicamente. Cuando haya una nueva versión, RStudio te lo notificará. Es recomendable actualizarse para obtener las últimas características.
+
+::: aside
+Revisa las notas de [Hadley Wickham](https://es.r4ds.hadley.nz/01-intro.html)!
+:::
+
+::: notes
+R Markdown is a file format for making dynamic documents with R. However, you need to call it from R to use it, and it was depedentn on knitr. If you're a Python user, it means you need to install R to use R Markdown. Quarto is a tool that you can call from the terminal or command line, and is independent from the computational systems. Quarto supports knitr, and can support others. So, you can think of Quarto as the next generation R Markdown that is fundamentally multilanguage and multiengine.
+:::
+
+## Pero si hay más softwares estadísticos, ¿por qué usamos (o deberíamos usar) R?
+
+::: incremental
+-   Costo: Software libre
+-   Potencia (N° herramientas): Comunidad que crea nuevas herramientas (packages) constantemente.
+-   Mejora la reproducibilidad: documentar explícitamente los pasos de investigación
+-   Versatilidad: Muchas extensiones: [GIS](https://mappinggis.com/2019/02/r-y-gis-que-es-r-y-su-relacion-con-los-sig/), [Quarto](https://quarto.org/), etc.
+:::
+
+::: aside
+Revisa [Gandrud, C. (2015)](https://api.taylorfrancis.com/content/books/mono/download?identifierName=doi&identifierValue=10.1201/9781315382548&type=googlepdf)!
+:::
+
+::: notes
+R ofrece un entorno ideal para investigación reproducible gracias a su comunidad activa, capacidades multidisciplinarias, presentaciones dinámicas y la necesidad de escribir código, que obliga a documentar explícitamente los pasos de investigación.
+
+So the goals are to create these dynamic documents that can be reproducible and automated. \[story about building documents\]. For single-source publishing, you often need to create all sorts of output, like things that are printed, on the web, on the mobile. The idea is to being able to make publications from one source.
+:::
+
+## ¿Para qué podemos usar R? {.small}
+
+::: panel-tabset
+#### En general
+
+Proporciona una amplia variedad de herramientas para generar visualizaciones y personalización de gráficos de datos de alta calidad, además, junto con Rstudio permiten la automotización de reportes y la replicabilidad de los análisis mediante el uso de scripts.
+
+#### Aplicaciones 
+
+-   Actualmente, R es ampliamente utilizado en áreas como la bioestadística, el data mining, la econometría, la visualización de datos, etc. 
+-   R se emplea principalmente para análisis estadístico de datos y construcción de gráficos, pero su potencia radica en su calidad como lenguaje.
+
+#### Funcionalidades 
+
+Con R se pueden realizar una variedad de tareas adicionales, como...
+
+-   Analizar y/o editar imágenes. 
+-   Realizar análisis de sonido.  
+-   Analizar textos (cuantitativa y cualitativamente).  
+-   Generar mapas y realizar análisis espacial. 
+-   Realizar análisis de redes sociales (ARS). 
+-   Extraer, analizar y visualizar datos de páginas web (como Facebook, Twitter, Instagram, etc). 
+-   Escribir textos (artículos, libros, etc.) y publicarlos digitalmente. 
+-   Crear gráficos interactivos y animaciones, etc. 
+
+#### Funcionalidades Inesperadas 
+
+R también permite realizar procedimientos totalmente desvinculados del análisis y visualización de datos, tales como...
+
+-   Enviar correos electrónicos.  
+-   Crear partituras y tablaturas para guitarra.  
+-   Crear piezas de arte abstracto o, por lo menos, simularlas. 
+
+:::
+
+::: aside
+Revisa [Fernández, M. I. (2020)](http://scielo.iics.una.py/pdf/ucsa/v7n2/2409-8752-ucsa-7-02-97.pdf)!
+:::
+
+::: notes
+Proporciona una amplia variedad de herramientas para generar visualizaciones y personalización de gráficos de datos de alta calidad, además, junto con Rstudio permiten la automotización de reportes y la replicabilidad de los análisis mediante el uso de scripts.
+
+- Pero también...
+
+  - Es una herramienta de procesamiento estadístico: limpieza, manejo, almacenamiento de datos e integración con distintas bases de datos o lenguajes de otros programas (Spss, Python o Stata)
+
+  - Amplia variedad de técnicas estadísticas para el análisis de datos: modelos lineales, pruebas estadísticas, análisis de series de tiempo, clasificación, agrupación, enter otros.
+
+  - Posibilidad de creación de librerías propias para trabajos en específico
+
+  - Implementar análisis con algoritmos de Machine Learning, data mining y big data. 
+    
+  - Web Scraping, generar tableros o aplicaciones como shiny
+
+- *Después de lo que se ha expuesto, les animo a que continúen explorando R y sus diversos usos a través de diferentes fuentes, siendo este curso una de ellas.*
+:::
+
+## Gracias por tu atención!
+
+¡Espero que la presentación les anime a explorar R y sus diversos usos!
+
+-   Revisen [Quarto documentation](https://quarto.org/).
+-   Lean un poco de [Awesome Quarto](https://github.com/mcanouil/awesome-quarto).
+
+##
+![](images/politai2.png){fig-align="center"}
+
+## Referencias
+
+-   [Quarto questions](https://occasionaldivergences.com/posts/quarto-questions/) by Marc Dotson
+-   Velásquez, I. (2022). [Introduction to Quarto](https://github.com/ivelasq/2022-10-27_intro-to-quarto)
+-   Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc." En [First Edition](https://r4ds.had.co.nz/) y [Second Edition](https://r4ds.hadley.nz/) 
+-   Fernández, M., I. (2020). Ventajas de R como herramienta para el Análisis y Visualización de datos en Ciencias Sociales. Revista Científica de la UCSA, 7(2), 97-111. Epub 00 de agosto de 2020. <https://doi.org/10.18004/ucsa/2409-8752/2020.007.02.097>
+
+*El contenido de este curso se ofrece bajo una licencia [Dominio público](https://en.wikipedia.org/wiki/Public_domain). El contenido de este curso puede considerarse bajo esta licencia a menos que se notifique de manera diferente.* 
+
+## ¿QUÉ ES EL P-VALUE?🎲 {.r-stretch}
+
+{{< youtube ibmjzFv4K1Y >}}
+
+::: aside
+Source: [Data política](https://www.youtube.com/@Datapolitica) en YouTube
+:::

@@ -1,0 +1,6 @@
+project:
+  title: "intro-R-RStudio"
+  type: default
+  
+editor: source
+theme: "custom.css"
