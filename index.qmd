@@ -227,7 +227,7 @@ Proporciona una amplia variedad de herramientas para generar visualizaciones y p
 - *Después de lo que se ha expuesto, les animo a que continúen explorando R y sus diversos usos a través de diferentes fuentes, siendo este curso una de ellas.*
 :::
 
-## Gracias por tu atención!
+## Gracias por su atención!
 
 ¡Espero que la presentación les anime a explorar R y sus diversos usos!
 
