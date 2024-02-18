@@ -24,9 +24,17 @@ Joel Belsasar & Carlos Crespín
 
 <i class="fas fa-envelope"></i> a20196510@pucp.edu.pe | <i class="fas fa-envelope"></i> cdcrespin@pucp.edu.pe
 
+<center>
+
 [POLITAI](https://revistas.pucp.edu.pe/index.php/politai)
 
 [Asociación Civil](https://www.instagram.com/politai_asoc_civil/)
+
+</center>
+
+::: notes
+Hola con todas y todos, me llamo Joel, soy de Ayacucho, estoy en el noveno ciclo de la carrera de ciencia politica y gobierno. Y hoy voy a presentarles una introduccion a R y RStduio que he preparado junto con mi amigo Carlos Crespín, quien continuará con la segunda parte del taller mañana.
+:::
 
 ## 
 
@@ -37,13 +45,15 @@ Joel Belsasar & Carlos Crespín
 </center>
 
 ::: notes
-Hi everybody! Thank you so much for joining today's session. I am so excited to introduce Quarto and many thanks to Laura and the R-Ladies St. Louis co-organizers for having me today.
+
+Además, quisiera agraceder a Politai y a los organizadores: Daniela, Edgar y Silvana por habernos invitado hoy.
 :::
 
 ## Instrucciones {.small}
 
--   Diapositivas: <https://taller-politai-2024-0.github.io/Sesion-0.1/>
--   Sesión 1 en GitHub Pages: <https://taller-politai-2024-0.github.io/Sesion-0.1/>
+-   Diapositivas: [Guía de Instalación](https://taller-politai-2024-0.github.io/guia-install-r/)
+-   Diapositivas:[Introducción Teoría](https://taller-politai-2024-0.github.io/Sesion-0.1/)
+-   Sesión 1 en GitHub Pages: [Introducción Práctica](https://taller-politai-2024-0.github.io/Sesion-1/) 
 
 
 ::: callout-tip
@@ -57,7 +67,18 @@ Para seguir el taller, asegúrese de...
 :::
 
 ::: notes
-You have a few options of how to attend this session. On the README file of the GitHub repo for this session is a list of instructions and a link to the exercise repo. One option is that you have a local copy of the exercises already, and when we get to the different sections you can follow along with what I am doing on your own RStudio. Another option is that you sign up for RStudio Cloud and go into the project to follow along. It is also linked in the instructions. One benefit of this is that you don't have to have RStudio installed on your computer and the project is ready, the packages are installed for you, and you can save a copy of your work if you would like. But, please feel free to just watch the session and try things out on your own afterwards. The slides, repositories, and project will stay up so that you can try things out on your own time. One other thing to note is that Quarto has a lot of options for creating content, so I added some reference materials in the exercise repo README so that you can play around with other options other than the ones I show you.
+Para comenzar, aquí se encuentran los enlaces a la guía, a las diapisitivas y al html de la sesión 1.
+
+Y también los animo a revisar los repositorios y otros documentos que dejo en el apartado de referencias
+
+RECOMENDACIONES INICIALES: SÉ QUE PUEDE SER ABRUMADOR porque ES APRENDER UN LENGUAJE NUEVO, O SEA, NO VA A SER FACIL. pero el PROGRAMA es MUY INTUTIVO y además yo y mis compañeros y compañeras les vamos a ayudar*
+
+practicar los ejercicios: COMPRENDER MEJOR: CURIOSIDAD e intuicion
+
+Y CUALQUIER DUDA, PREGUNTEN POR EL CHAT, POR PRIVADO O PRENDAN EL MICROFONO O TAMBIÉN PUEDEN ENVIARME UN CORREO
+
+ENTONCES
+
 :::
 
 ## Sobre [R y RStudio]{.flow} {.r-stretch}
@@ -73,6 +94,16 @@ You have a few options of how to attend this session. On the README file of the 
     - En Github: [Influencia de variables económicas-sociales en la cantidad de protestas a nivel mundial](https://krlos20203563.github.io/Proyecto-Grupal-Estadistica-para-el-Analisis-Politico-2/)
 
     - En Rpubs: [¿Los países productores de petróleo son los Estados más contaminantes?](https://rpubs.com/LuchoValverde/920711)
+
+::: notes
+
+El objetivo del taller es que todos aprendamos lo básico sobre R, Con eso, cada uno podrá seguir aprendiendo en función de los usos que deseen o necesiten darle.*
+
+*Además, les compartiré algunos consejos prácticos y atajos que hubiera deseado conocer cuando comencé con R, y que espero les resulten muy útiles y beneficiosos.* *O sea, en la internet hay un monton de informacion sobre R, introducciones, Rmd, R, etc, pero mi objetivo con este taller es proporcionarles las herramientas esenciales para adaptarse a R y así profundizar en sus propias investigaciones 
+
+*El siguiente objetivo del taller es su*
+
+:::
 
 ## Repasemos la instalación de...
 
@@ -120,7 +151,11 @@ Revisa el [R project homepage](https://www.r-project.org/)!
 :::
 
 ::: notes
-Quarto is an open-source scientific and technical publishing system built on Pandoc. Let's break this down: Open-source: RStudio believes that it's better for everyone if the tools used for research and science are free and open. Free software means more reproducibility, widespread sharing of knowledge and techniques, and elimination of cost barriers. You can also see the source code and contribute, too. Scientific and technical: Scientific and technical means that Quarto has specific things for journal articles or scientific papers, like support for code execution, citations, footnotes, scientific markdown, equations, citations, crossrefs, so many things. We'll be showing some of these later on, but Quarto definitely has the scientific publishing audience in mind. Publishing system: Quarto is a tool for writing dynamic documents that combine code, output, and text. It can embed output from Python, R, Julia, and Observable. Quarto can be rendered to create high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more formats. Pandoc is the tool working behind the scenes to change Quarto documents to their finalized format.Quarto documents are authored with markdown, which is a plain text format. But Pandoc markdown is very rich and lets you control your document in very specific ways while being easy to read and write. We'll cover this as well.
+R es un lenguaje y entorno de programación científico y técnico de código abierto, diseñado específicamente para realizar tareas de computación estadística y gráficos, entre otras funcionalidades. 
+
+Como lenguaje nos permite escribir y ejecutar código para realizar análisis de datos y crear visualizaciones. Y Como entorno nos proporciona herramientas y funciones integradas que facilitan la manipulación y exploración de datos así como la generación de gráficos y modelos estadísticos. 
+
+Además, al ser de código abierto, R está disponible de forma gratuita y su comunidad de usuarios contribuye constantemente con nuevas funciones, paquetes y mejoras, lo que lo convierte en una herramienta flexible y en constante evolución para analizar y visualizar datos.
 :::
 
 ## … ¿Y RStudio?
@@ -139,7 +174,12 @@ Revisa las notas de [Hadley Wickham](https://es.r4ds.hadley.nz/01-intro.html)!
 :::
 
 ::: notes
+
+*RStudio te ayuda a trabajar con R de modo más sencillo. Es como un lugar donde puedes escribir y ejecutar código de R, ver tus resultados y organizar tus proyectos. También tiene muchas herramientas útiles como un editor de texto, una ventana donde puedes ver tus gráficos*
+
+
 R Markdown is a file format for making dynamic documents with R. However, you need to call it from R to use it, and it was depedentn on knitr. If you're a Python user, it means you need to install R to use R Markdown. Quarto is a tool that you can call from the terminal or command line, and is independent from the computational systems. Quarto supports knitr, and can support others. So, you can think of Quarto as the next generation R Markdown that is fundamentally multilanguage and multiengine.
+
 :::
 
 ## 
@@ -154,13 +194,19 @@ R Markdown is a file format for making dynamic documents with R. However, you ne
 :::
 
 ::: aside
-Revisa [Gandrud, C. (2015)](https://api.taylorfrancis.com/content/books/mono/download?identifierName=doi&identifierValue=10.1201/9781315382548&type=googlepdf)!
+[Gandrud, C. (2015)](https://api.taylorfrancis.com/content/books/mono/download?identifierName=doi&identifierValue=10.1201/9781315382548&type=googlepdf)
 :::
 
 ::: notes
-R ofrece un entorno ideal para investigación reproducible gracias a su comunidad activa, capacidades multidisciplinarias, presentaciones dinámicas y la necesidad de escribir código, que obliga a documentar explícitamente los pasos de investigación.
 
-So the goals are to create these dynamic documents that can be reproducible and automated. \[story about building documents\]. For single-source publishing, you often need to create all sorts of output, like things that are printed, on the web, on the mobile. The idea is to being able to make publications from one source.
+*1. R es un programa de codigo abierto y gratuito (no requiere licencia como otros softwares). Es decir de acceso libre y que se expande con contribuciones de la comunidad de usuarios, lo que se traduce en paquetes con funciones myu especificas y variadas que veremos*
+
+*2. Es tremendamente eficiente para el procesamiento de grandes volúmenes de datos.*
+
+3. puedes documentar explícitamente cada paso de tu investigación. O sea, puedes registrar los análisis que realizaste, qué datos usaste y cómo llegaste a tus conclusiones. Esto es importante porque hace que tu trabajo sea más transparente y reproducible, lo que significa que otras personas pueden seguir tus pasos y verificar tus resultados.
+
+*3 R es muy versátil y puede ser utilizado para una amplia gama de aplicaciones. Hay extensiones disponibles para trabajar con datos espaciales (GIS), crear documentos dinámicos (Quarto), y mucho más. Esto significa que puedes utilizar R para casi cualquier tipo de análisis de datos que necesites realizar.*
+
 :::
 
 ## ¿Para qué podemos usar R? {.small}
@@ -206,10 +252,26 @@ R también permite realizar procedimientos totalmente desvinculados del análisi
 :::
 
 ::: aside
-Revisa [Fernández, M. I. (2020)](http://scielo.iics.una.py/pdf/ucsa/v7n2/2409-8752-ucsa-7-02-97.pdf)!
+ [Fernández, M. I. (2020)](http://scielo.iics.una.py/pdf/ucsa/v7n2/2409-8752-ucsa-7-02-97.pdf)
 :::
 
 ::: notes
+
+*COMO ya hemos advertido, principalmente, su importancia radica en que*
+
+
+En general R ofrece muchas herramientas para hacer gráficos con datos y también permite hacer informes automáticamente y replicar los análisis usando scripts junto con RStudio.
+
+En aplicaciones: R se usa mucho en áreas como la bioestadística, el data mining, la econometría y la visualización de datos. 
+
+Principalmente se usa para analizar datos y hacer gráficos, pero también se puede usar para muchas otras cosas, como editar imágenes, analizar sonido, trabajar con textos, crear mapas y análisis espacial, analizar redes sociales, extraer datos de páginas web, escribir textos y publicarlos digitalmente, y crear gráficos interactivos y animaciones.
+
+Además, R también puede usarse para enviar correos electrónicos, crear partituras musicales o tablaturas entre otros.
+
+
+O sea, les animo a que continúen explorando R y sus diversos usos a través de diferentes fuentes que hay en internet, siendo este curso una de ellas.*
+
+--------------------------------------
 Proporciona una amplia variedad de herramientas para generar visualizaciones y personalización de gráficos de datos de alta calidad, además, junto con Rstudio permiten la automotización de reportes y la replicabilidad de los análisis mediante el uso de scripts.
 
 - Pero también...
@@ -224,30 +286,26 @@ Proporciona una amplia variedad de herramientas para generar visualizaciones y p
     
   - Web Scraping, generar tableros o aplicaciones como shiny
 
-- *Después de lo que se ha expuesto, les animo a que continúen explorando R y sus diversos usos a través de diferentes fuentes, siendo este curso una de ellas.*
+
 :::
 
 ## Gracias por su atención!
 
 ¡Espero que la presentación les anime a explorar R y sus diversos usos!
 
--   Revisen [Quarto documentation](https://quarto.org/).
--   Lean un poco de [Awesome Quarto](https://github.com/mcanouil/awesome-quarto).
-
-##
-
-
-
 ![](images/politai2.png){fig-align="center"}
 
 
 
-## Referencias
+## Referencias {.small}
 
--   [Quarto questions](https://occasionaldivergences.com/posts/quarto-questions/) by Marc Dotson
--   Velásquez, I. (2022). [Introduction to Quarto](https://github.com/ivelasq/2022-10-27_intro-to-quarto)
+-   Velásquez, I. (27 de octubre de 2022). *Introduction to Quarto*. R-Ladies St. Louis. <https://github.com/ivelasq/2022-10-27_intro-to-quarto> 
+-   Bellini, Y., & D’Andrea, M., F. (17 de septiembre de 2019). *Introducción al lenguaje R*. 11vo Congreso Argentino de Agroinformática. <https://flor14.github.io/r_cai_2019/> 
+-   Dotson, M. (14 de octubre de 2022). *Quarto questions*. Occasional Divergences. <https://occasionaldivergences.com/posts/quarto-questions/>
 -   Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc." En [First Edition](https://r4ds.had.co.nz/) y [Second Edition](https://r4ds.hadley.nz/) 
 -   Fernández, M., I. (2020). Ventajas de R como herramienta para el Análisis y Visualización de datos en Ciencias Sociales. Revista Científica de la UCSA, 7(2), 97-111. Epub 00 de agosto de 2020. <https://doi.org/10.18004/ucsa/2409-8752/2020.007.02.097>
+-   Quarto documentation <https://quarto.org/>
+-   Awesome Quarto <https://github.com/mcanouil/awesome-quarto>
 
 ::: aside
 *El contenido de este curso se ofrece bajo una licencia [Dominio público](https://en.wikipedia.org/wiki/Public_domain). El contenido de este curso puede considerarse bajo esta licencia a menos que se notifique de manera diferente.* 
