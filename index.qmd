@@ -7,7 +7,7 @@ format:
     transition: fade
     background-transition: fade
     highlight-style: pygments
-    footer: "[POLITAI](https://taller-politai-2024-0.github.io/Sesion-0.1/)"
+    footer: "[POLITAI](https://taller-pucp-politai.github.io/Sesion-0.1/)"
 ---
 
 ##  {.title}
@@ -17,12 +17,12 @@ Introducción a [R y RStudio]{.flow}
 :::
 
 ::: {style="font-size: 80px"}
-Joel Belsasar & Carlos Crespín
+Joel Belsasar
 :::
 
-{{< fa brands github size=1.4xl >}} [luccemhu](https://github.com/luccemhu) | {{< fa brands github size=1.4xl >}} [krlos20203563](https://github.com/krlos20203563) 
+{{< fa brands github size=1.4xl >}} [luccemhu](https://github.com/luccemhu) 
 
-<i class="fas fa-envelope"></i> a20196510@pucp.edu.pe | <i class="fas fa-envelope"></i> cdcrespin@pucp.edu.pe
+<i class="fas fa-envelope"></i> a20196510@pucp.edu.pe
 
 <center>
 
@@ -33,7 +33,7 @@ Joel Belsasar & Carlos Crespín
 </center>
 
 ::: notes
-Hola con todas y todos, me llamo Joel, soy de Ayacucho, estoy en el noveno ciclo de la carrera de ciencia politica y gobierno. Y hoy voy a presentarles una introduccion a R y RStduio que he preparado junto con mi amigo Carlos Crespín, quien continuará con la segunda parte del taller mañana.
+Hola con todas y todos, me llamo Joel, soy de Ayacucho, estoy en el noveno ciclo de la carrera de ciencia politica y gobierno. Y hoy voy a presentarles una introduccion a R y RStduio.
 :::
 
 ## 
@@ -51,9 +51,8 @@ Además, quisiera agraceder a Politai y a los organizadores: Daniela, Edgar y Si
 
 ## Instrucciones {.small}
 
--   Diapositivas: [Guía de Instalación](https://taller-politai-2024-0.github.io/guia-install-r/)
--   Diapositivas:[Introducción Teoría](https://taller-politai-2024-0.github.io/Sesion-0.1/)
--   Sesión 1 en GitHub Pages: [Introducción Práctica](https://taller-politai-2024-0.github.io/Sesion-1/) 
+-   Diapositivas: [Guía de Instalación](https://taller-pucp-politai.github.io/guia-r/)
+-   Sesión 1 en GitHub Pages: [Introducción Práctica](https://taller-pucp-politai.github.io/Sesion-1/) 
 
 
 ::: callout-tip
@@ -295,7 +294,9 @@ Proporciona una amplia variedad de herramientas para generar visualizaciones y p
 
 ![](images/politai2.png){fig-align="center"}
 
-
+::: aside
+*El contenido de este curso se ofrece bajo una licencia [Dominio público](https://en.wikipedia.org/wiki/Public_domain). El contenido de este curso puede considerarse bajo esta licencia a menos que se notifique de manera diferente.* 
+:::
 
 ## Referencias {.small}
 
@@ -307,9 +308,7 @@ Proporciona una amplia variedad de herramientas para generar visualizaciones y p
 -   Quarto documentation <https://quarto.org/>
 -   Awesome Quarto <https://github.com/mcanouil/awesome-quarto>
 
-::: aside
-*El contenido de este curso se ofrece bajo una licencia [Dominio público](https://en.wikipedia.org/wiki/Public_domain). El contenido de este curso puede considerarse bajo esta licencia a menos que se notifique de manera diferente.* 
-:::
+
 
 ## ¿QUÉ ES EL P-VALUE?🎲 {.r-stretch}
 
